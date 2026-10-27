@@ -83,7 +83,12 @@ Submit a tarball (tar.gz file for example) that includes your compiler that
 when tested on the provided pytorch functions is able to make the right
 choices for fusion. Fused execution can easily be verified through an nsys
 profiling or by inspecting IR at the end of optimizer stage (exit point from
-affine loop nests).
+affine loop nests). Include a README.md file that lists out any environment
+variables that should be set so that both test cases can be run with the e0358
+backend as described above.
+
+The README.md should report all measured performances, with eager, inductor, and
+your e0358 backend on both test cases and comment on the performances.
 
 Submit to udayb@iisc.ac.in with subject: "E0358 Asst-1 submission". Do not
 change the subject.
